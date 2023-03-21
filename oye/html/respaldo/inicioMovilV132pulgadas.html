@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../favicon.ico">
+<title>Inicio Móvil</title>
+<!-- Fontawesome icon CSS -->
+<link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../lib/bootstrap-4.1.1/css/bootstrap.css" type="text/css">
+<style media = "screen">
+/* Telefonos extra pequeños (telefonos, 576px y menores) */
+@media (max-width: 576px){
+	body {
+		background:bg-light;
+	}
+	
+	div.movil {
+		display: block;
+	}
+  
+	div.tablet {
+		display: none;
+	}
+}
+/* Telefonos  pequeños (tabletas, 576px y superiores) */
+@media (min-width: 576px){
+	body {
+	background:bg-light;
+	}
+	
+	div.tablet {
+    display: block;
+  }
+  
+  div.movil {
+    display: none;
+  }
+  
+}
+</style>
+
+</head>
+<body >
+
+
+<!-- <= 576 PHONE para telefonos-->
+<div class="row">
+  <div class="col-sm-9 movil">
+	<!-- Menu de navegación -->
+	<nav class="movil navbar navbar-expand-lg navbar-light bg-white">
+		<div class="d-flex justify-content-start">
+			<img src="../imagenes/logo.png" class="img-fluid" alt="Responsive image">
+			<h1 class="text-primary">OYE</h1>
+		</div> 
+
+		<!-- Icono del Menú de Hamburguesa -->
+ 
+		<div class="d-flex justify-content-end">
+			<div class="p-2"><h1 <i class="fa fa-bars"></i></h1></div>
+		</div>
+	</nav>
+	<div class="d-inline-flex ">
+		<div  >
+		<button type="button" class="btn bg-white m-1">Inicio</button>
+		</div>
+		<div  >
+		<button type="button" class="btn bg-white m-1">Canciones</button>
+		</div>
+	</div>
+  
+	<div class="d-inline-flex">
+		<div  >
+			<button type="button" class="btn bg-primary text-white m-1" data-toggle="modal" data-target="#exampleModal">
+			Contacto
+			</button>
+		</div>
+		<div  >
+			<button type="button" class="btn bg-primary text-white m-1">Inicio de Sesión</button>
+		</div>
+	
+		<div>
+			<button type="button" class="btn bg-primary text-white m-1">Registro</button>
+		</div>
+	</div>
+  
+	<!-- Modal -->
+	<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					info@oye.com
+					+1 123 123 123 1223
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<h1 class="text-body">Canciones gratis para la comunidad</h1>
+    <h3 class="text-body">Con este sitio podrás escuchar audio de manera libre...</h3>
+	<button type="button" class="btn btn-primary btn-lg m-3">Ver canciones</button>
+	<img src="../imagenes/portada.jpeg" class="img-fluid" alt="Responsive image">
+		<!---- Tabla ----->
+		<div class="col-sm-3">
+	<table>
+	<tbody>
+    <tr>
+       <td class="text-hide"></td>
+    </tr>
+    <tr>
+       <td class="text-center"><h3>TOP 3</h3></td>
+    </tr>
+	<tr>
+       <td class="text-left"><h4>Canción</h4></td>
+    </tr>
+	<tr>
+       <td>
+	   <audio controls>
+	   <source src="../canciones/uno.mp3" type="audio/mp3">
+	   </audio></td>
+    </tr>
+	<tr>
+       <td>
+	   <audio controls>
+	   <source src="../canciones/dos.mp3" type="audio/mp3">
+	   </audio></td>
+    </tr>
+	<tr>
+       <td>
+	   <audio controls>
+	   <source src="../canciones/tres.mp3" type="audio/mp3">
+	   </audio></td>
+    </tr>
+	</tbody>
+	</table>
+  </div><!---<div class="col-sm-3">--->
+</div> <!---<div class="col-sm-9 movil">--->
+</div>	<!---<div class="row">--->
+<!-- Fin Menu -->
+  
+  
+	
+    
+    
+  
+
+
+
+
+
+<!-- >= 576 para tabletas y superiores-->
+<div class="row">
+  <div class="col-sm tablet" >
+	<!-- Menu -->
+ <div class="d-flex justify-content-between bg-white">
+  <div class=" d-inline-flex">
+	<img src="../imagenes/logo.png" class="img-fluid" alt="Responsive image">
+	<h1 class="text-primary">OYE</h1>
+  </div>
+  
+  <div class="d-inline-flex ">
+	<div  >
+		<button type="button" class="btn bg-white m-1">Inicio</button>
+	</div>
+	<div  >
+		<button type="button" class="btn bg-white m-1">Canciones</button>
+	</div>
+	
+  </div>
+  
+  <div class="d-inline-flex">
+	<div  >
+		<button type="button" class="btn bg-primary text-white m-1" data-toggle="modal" data-target="#exampleModal">
+			Contacto
+		</button>
+	</div>
+	<div  >
+		<button type="button" class="btn bg-primary text-white m-1">Inicio de Sesión</button>
+	</div>
+	
+	<div  >
+		<button type="button" class="btn bg-primary text-white m-1">Registro</button>
+	</div>
+	
+  </div>
+  
+  <!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        info@oye.com
+		+1 123 123 123 1223
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+<!-- Fin Menu -->
+
+
+<!-- Buscar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<h3>Canciones</h3>
+			</div>
+		</div>
+	
+  
+  
+    <div class="row">
+		<div class="col-12 col-md-16 m-auto">
+			<form class="form-inline container">
+				<input class="form-control col-md-16 col-12" type="text" placeholder="Buscar..." aria-label="Search">
+			</form>
+		</div>	
+	</div>
+	</div>
+	
+  </div>
+</nav>
+<!-- Fin Buscar -->
+<!--- CONTENIDO ---->
+<div class="container">
+  <div class="row">
+  
+  <div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_1.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/uno.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_2.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/dos.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_3.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/tres.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_4.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/cuatro.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_1.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/cinco.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_2.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/seis.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_3.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/siete.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_4.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/ocho.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+	
+	<div class="col-md-5 m-2">
+	<div class="card">
+		<img src="../imagenes/icon_1.svg" class = "img-max" >
+		<div class="card-body">
+			<audio controls>
+				<source src="../canciones/nueve.mp3" type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+	</div>
+  </div>
+</div>
+<!--- CONTENIDO ---->  
+ 
+  
+  
+ 
+  
+</div><!---<div class="col-sm tablet" >--->
+<!-- Fin Menu -->
+  </div>
+  
+  <div class="col-sm" >
+  </div>
+  
+  <div class="col-sm" >
+  </div>
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+  
+  
+  
+  <!-- PIE DE PAGINA--> 
+ <footer >
+	<div class="d-flex justify-content-between bg-primary text-white m-1">
+		<div class="p-2">Comparte la Música</div>
+		<div class="p-2"></div>
+		<div class="p-2"><span><i class="fa fa-copyright"></i></span>Derechos Reservados</div>
+	</div>
+ </footer>
+<!-- PIE DE PAGINA--> 
+
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+<script src="../lib/popper/popper.min.js"></script> 
+
+<script src="../lib/bootstrap-4.1.1/js/bootstrap.min.js" type="text/javascript"></script> 
+
+
+</body>
+
+</html>

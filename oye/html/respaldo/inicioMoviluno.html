@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../favicon.ico">
+<title>Inicio Móvil</title>
+<!-- Fontawesome icon CSS -->
+<link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../lib/bootstrap-4.1.1/css/bootstrap.css" type="text/css">
+<style media = "screen">
+/* Telefonos extra pequeños (telefonos, 600px y menores) */
+@media (max-width: 600px){
+	body {
+	background:bg-light;
+	}
+	
+	div.movil {
+    display: block;
+  }
+  
+  div.tablet {
+    display: block;
+  }
+  
+}
+/* Telefonos  pequeños (tabletas, 600px y superiores) */
+@media (min-width: 600px){
+	body {
+	background:yellow;
+	}
+	
+	div.table {
+    display: block;
+  }
+  
+  div.movil {
+    display: none;
+  }
+  
+}
+</style>
+
+</head>
+<body >
+
+<!-- Menu de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<div class="d-flex justify-content-start">
+  <img src="../imagenes/logo.png" class="img-fluid" alt="Responsive image">
+  <h1 class="text-primary">Oye</h1>
+</div> 
+
+<!-- Icono del Menú de Hamburguesa -->
+ 
+ <div class="d-flex justify-content-end">
+ <div class="p-2"><h1 <i class="fa fa-bars"></i></h1>
+ </div>
+ </div>
+ <!-- Icono del Menú de Hamburguesa -->
+ 
+ <div class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Canciones</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <button type="button" class="btn btn-primary m-1">Contacto</button>
+      </li>
+	  <li class="nav-item">
+        <button type="button" class="btn btn-primary m-1">Inicio Sesión</button>
+      </li>
+	  <li class="nav-item">
+        <button type="button" class="btn btn-primary m-1">Registro</button>
+      </li>
+	  
+    </ul>
+  </div>
+</nav>
+
+<!-- plantilla móvil-->
+  <div class=" movil col-md-6">
+	<h1 class="text-body">Canciones gratis para la comunidad</h1>
+    <h3 class="text-body">Con este sitio podrás escuchar audio de manera libre...</h3>
+	<button type="button" class="btn btn-primary btn-lg m-3">Ver canciones</button>
+	<img src="../imagenes/portada.jpeg" class="img-fluid" alt="Responsive image">
+    <table class="table table-sm">
+  
+  <tbody>
+    <tr>
+       <td class="text-hide"></td>
+    </tr>
+    <tr>
+       <td class="text-center"><h3>TOP 3</h3></td>
+    </tr>
+	<tr>
+       <td class="text-left"><h4>Canción</h4></td>
+    </tr>
+	<tr>
+       <td>
+	   <audio controls>
+	   <source src="../canciones/uno.mp3" type="audio/mp3">
+	   </audio></td>
+    </tr>
+	<tr>
+       <td>
+	   <audio controls>
+	   <source src="../canciones/dos.mp3" type="audio/mp3">
+	   </audio></td>
+    </tr>
+	<tr>
+       <td>
+	   <audio controls>
+	   <source src="../canciones/tres.mp3" type="audio/mp3">
+	   </audio></td>
+    </tr>
+  </tbody>
+</table>
+	
+  </div>
+  
+  <!-- Media query tablet y superiores-->
+  
+  
+  
+  <footer >
+    <div class="col-md-16 bg-primary text-white m-1 text-center"><span><i class="fa fa-copyright"></i></span>Derechos Reservados</div>
+    
+  </footer>
+
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+<script src="../lib/popper/popper.min.js"></script> 
+
+<script src="../lib/bootstrap-4.1.1/js/bootstrap.min.js" type="text/javascript"></script> 
+
+
+</body>
+
+</html>

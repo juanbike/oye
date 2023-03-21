@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../favicon.ico">
+<title>Registro</title>
+<!-- Fontawesome icon CSS -->
+<link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../lib/bootstrap-4.1.1/css/bootstrap.css" type="text/css">
+<Style>
+.piePagina {
+	margin-top:1rem;
+}
+
+.margenSuperiorFormulario{
+	margin-top:2rem;
+}
+
+@font-face {
+  font-family: 'Nunito-Light';
+  font-style:  normal;
+  font-weight: 400;
+  src: url(../lib/font/nunito/Nunito-Light.ttf) format('ttf');
+}
+
+/* aplicamos fuentes a los botones */
+button { font-family: "Nunito", serif }
+
+</style>
+
+</head>
+<body class = "bg-light" onload='document.form1.text1.focus()'>
+
+
+<!-- Menu -->
+<div class="col-sm tablet" >
+<div class="d-flex justify-content-between bg-white">
+	<div class=" d-inline-flex">
+	  <img src="../imagenes/logo.png" class="img-fluid" alt="Responsive image">
+	  <h1 class="text-primary">OYE</h1>
+	</div>
+	
+	<div class="d-inline-flex ">
+	  <div  >
+		  <button type="button" class="btn bg-white m-1">Inicio</button>
+	  </div>
+	  <div  >
+		  <button type="button" class="btn bg-white m-1">Canciones</button>
+	  </div>
+	  
+	</div>
+	
+	<div class="d-inline-flex">
+	  <div>
+		  <button type="button" class="btn bg-primary text-white m-1" data-toggle="modal" data-target="#exampleModal">
+			  Contacto
+		  </button>
+	  </div>
+	  <!-- Modal -->
+	  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				  <div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					  </button>
+				  </div>
+				  <div class="modal-body">
+					  info@oye.com
+					  +1 123 123 123 1223
+				  </div>
+				  <div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	  <!-- Modal -->
+	  
+	  
+	  <div>
+		  <button type="button" class="btn bg-primary text-white m-1">Inicio de Sesión</button>
+	  </div>
+	  
+	  <div  >
+		  <button type="button" class="btn bg-primary text-white m-1">Registro</button>
+	  </div>
+	  
+	  
+	</div>
+	
+   
+	
+  </div>
+</div>  
+  <!-- Fin Menu -->
+
+
+ 
+<!-- Formulario-->
+<div class="container margenSuperiorFormulario">
+	<div class="row">
+		<div class="col-12 col-md-6 m-auto">
+			<form name="form1" action="#">
+				<!-- correo-->
+				<label  class="sr-only">correo</label>
+				<input id = "correo" type="text" class="form-control m-auto" name='text1' placeholder="Correo Electrónico" >
+				<!-- Contraseña-->
+				<label class="sr-only">clave</label>
+				<input id = "clave" type="password" class="form-control mt-1" name='text2' placeholder="Contraseña" >
+				<!-- Valida contaseña Contraseña-->
+				<label class="sr-only">clave</label>
+				<input id = "clave1" type="password" class="form-control mt-1" name='text3' placeholder="Repetir Contraseña" >
+				<!--- Genero Músical-->
+				<select id = "generoMusical" class="custom-select mt-1">
+					<option selected>Genero Músical</option>
+					<option value="1">Salsa</option>
+					<option value="2">Rock</option>
+					<option value="3">Jazz</option>
+				</select>
+				<!--- Edad-->
+				<label for="formControlRange">Seleccione su edad</label>
+				<input type="range" class="form-control-range" min="8" max="90" id="formControlRange" onInput="$('#rangeval').html($(this).val())">
+				<span id="rangeval">50<!-- Default value --></span>
+				<!--- Terminos de uso --->
+				<h5>Terminos de uso</h5>
+				<nav class="navbar navbar-light bg-light mt-1">
+					<span class="navbar-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					</span>
+				</nav>
+				<!--- Aceptar terminos de uso--->
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					<label class="form-check-label" for="inlineCheckbox1">Aceptar terminos de uso</label>
+				</div>
+				<!-- Aceptar-->
+				<input type="submit" name="submit" onclick="ValidateEmail(document.form1.text1, document.form1.text2)" value="Enviar" class="btn btn-sm btn-primary btn-round mt-5">
+				<br>
+			</form>
+		</div> 
+	</div>
+</div>			
+ <!-- Fin Formulario-->
+
+<script>
+	generoMusical.onclick = function() {
+    alert('¡Gracias!');
+  };
+</script>
+
+
+
+
+
+
+<!-- Pie de Página-->
+ <footer >
+	<div class="d-flex justify-content-between bg-primary text-white piePagina">
+		<div class="p-2">Comparte la Música</div>
+		<div class="p-2"></div>
+		<div class="p-2"><span><i class="fa fa-copyright"></i></span>Derechos Reservados</div>
+	</div>
+ </footer>
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+<script src="../lib/popper/popper.min.js"></script> 
+
+<script src="../lib/bootstrap-4.1.1/js/bootstrap.min.js" type="text/javascript"></script> 
+
+<!-- Validacion de correo electrónico --->
+<script src="../js/correo/validacionCorreo.js"></script>
+
+</body>
+
+</html>
